@@ -2,12 +2,16 @@ import express from "express";
 import bodyParser from "body-parser";
 import pg from "pg";
 
-const db = new pg.Client({
-  user: "postgres",
-  host: "localhost",
-  database: "world",
-  password: "Timex10@@",
+
+const db = new pg.Pool({
+  user: "za_user",
+  host: "dpg-crmidi5umphs739eu04g-a.oregon-postgres.render.com",
+  database: "za",
+  password: "zTVyc3oZJqDpP8gKHvnanMUpEQvt8Juo",
   port: 5432,
+  ssl: {
+    rejectUnauthorized: false  // Ensure this is set for SSL connections
+  }
 });
 
 const app = express();
