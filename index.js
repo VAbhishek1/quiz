@@ -3,9 +3,9 @@ import bodyParser from "body-parser";
 import pg from "pg";
 const db= new pg.Client({
   user: "postgres",
-  host:"localhost",
-  database:"world",
-  password:"Timex10@@",
+  host:"dpg-crmidi5umphs739eu04g-a/",
+  database:"za",
+  password:"zTVyc3oZJqDpP8gKHvnanMUpEQvt8Juo",
   port:"5432",
 
 })
