@@ -1,14 +1,17 @@
 import express from "express";
 import bodyParser from "body-parser";
 import pg from "pg";
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 
 const db = new pg.Pool({
-  user: "za_user",
-  host: "dpg-crmidi5umphs739eu04g-a.oregon-postgres.render.com",
-  database: "za",
-  password: "zTVyc3oZJqDpP8gKHvnanMUpEQvt8Juo",
-  port: 5432,
+  user: process.env.DB_USER,
+  host: process.env.DB_HOST,
+  database: process.env.DB_NAME,
+  password: process.env.DB_PASSWORD,
+  port: process.env.DB_PORT,
   ssl: {
     rejectUnauthorized: false  // Ensure this is set for SSL connections
   }

@@ -3,13 +3,12 @@ import bodyParser from "body-parser";
 import pg from 'pg';
 
 const pool = new pg.Pool({
-  user: "za_user",
-  host: "dpg-crmidi5umphs739eu04g-a.oregon-postgres.render.com",
-  database: "za",
-  password: "zTVyc3oZJqDpP8gKHvnanMUpEQvt8Juo",
+  user: "abhishek_v41x_user",
+  host: "dpg-ctd6bd3qf0us73bl9kn0-a.oregon-postgres.render.com",
+  database: "abhishek_v41x",
+  password: "TqtKgsTqjCtX1g8JyzEHHe0IZnGInnEb",
   port: 5432,
-  max: 20, // Maximum number of clients in the pool
-  idleTimeoutMillis: 30000, // Close idle clients after 30 seconds
+  
 });
 
 let quiz=[];
