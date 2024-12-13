@@ -7,11 +7,11 @@ dotenv.config();
 
 
 const db = new pg.Pool({
-  user: process.env.DB_USER,
-  host: process.env.DB_HOST,
-  database: process.env.DB_NAME,
-  password: process.env.DB_PASSWORD,
-  port: process.env.DB_PORT,
+  user: "abhishek_v41x_user",
+  host: "dpg-ctd6bd3qf0us73bl9kn0-a.oregon-postgres.render.com",
+  database: "abhishek_v41x",
+  password: "TqtKgsTqjCtX1g8JyzEHHe0IZnGInnEb",
+  port: 5432,
   ssl: {
     rejectUnauthorized: false  // Ensure this is set for SSL connections
   }
